@@ -70,7 +70,7 @@ namespace UnitTest1
 			key = tree->Find(3);
 			Assert::IsTrue(key->key == 3);
 		}
-		TEST_METHOD(Test4)
+		TEST_METHOD(Test_4)
 		{
 			try
 			{
