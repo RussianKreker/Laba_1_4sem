@@ -13,7 +13,7 @@ namespace UnitTest1
 	{
 	public:
 
-		TEST_METHOD(RBTree_Test1)
+		TEST_METHOD(Test1)
 		{
 			RBTree<int, int>* tree = new RBTree<int, int>;
 			List<int>* list;
@@ -35,7 +35,7 @@ namespace UnitTest1
 				Assert::IsTrue(list->At(i) == list_test->At(i));
 			}
 		}
-		TEST_METHOD(RBTree_Test2)
+		TEST_METHOD(Test2)
 		{
 			RBTree<int, int>* tree = new RBTree<int, int>;
 			List<int>* list;
@@ -59,7 +59,7 @@ namespace UnitTest1
 				Assert::IsTrue(list->At(i) == list_test->At(i));
 			}
 		}
-		TEST_METHOD(RBTree_Test3)
+		TEST_METHOD(Test3)
 		{
 			RBTree<int, int>* tree = new RBTree<int, int>;
 			Node<int, int>* key;
@@ -70,7 +70,7 @@ namespace UnitTest1
 			key = tree->Find(3);
 			Assert::IsTrue(key->key == 3);
 		}
-		TEST_METHOD(RBTree_Test4)
+		TEST_METHOD(Test4)
 		{
 			try
 			{
@@ -86,7 +86,7 @@ namespace UnitTest1
 				Assert::AreEqual(warning, "No such element exists");
 			}
 		}
-		TEST_METHOD(RBTree_Test5)
+		TEST_METHOD(Test5)
 		{
 			try
 			{
@@ -98,7 +98,7 @@ namespace UnitTest1
 				Assert::AreEqual(warning, "There is no element");
 			}
 		}
-		TEST_METHOD(RBTree_Test6)
+		TEST_METHOD(Test6)
 		{
 			try
 			{
@@ -110,7 +110,7 @@ namespace UnitTest1
 				Assert::AreEqual(warning, "There is no element");
 			}
 		}
-		TEST_METHOD(RBTree_Test7)
+		TEST_METHOD(Test7)
 		{
 			RBTree<int, int>* tree = new RBTree<int, int>;
 			for (int i = 0; i < 10; i++)
